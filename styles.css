@@ -1,0 +1,104 @@
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("/Norse-Bold.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+header {
+  min-height: 100vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+}
+
+.banner {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+
+.banner h1 {
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  font-family: Norse-Bold;
+  padding: 1.5rem;
+}
+
+.footer {
+  height: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main {
+  width: 60%;
+  min-height: 70%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 2rem;
+  min-height: 30%;
+}
+
+.main-text {
+
+}
+
+.main-form {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.main-form h3 {
+  padding-bottom: 2rem;
+}
+
+form input {
+  margin: 0.5rem;
+  padding: 0.2rem;
+  margin-left: 0;
+}
+
+.create-login {
+  border-top: rgba(0, 0, 0, 0.5);
+}
+
+.create-login p {
+  padding-top: 1.2rem;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  margin: 0.5rem;
+  margin-left: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: rgb(58, 145, 18);
+}
+
