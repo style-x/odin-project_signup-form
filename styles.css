@@ -86,7 +86,7 @@ form input {
 }
 
 .create-login {
-  border-top: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(180deg, #aaaaaa 0%, #ffffff 3%);
 }
 
 .create-login p {
@@ -102,3 +102,13 @@ button {
   background-color: rgb(58, 145, 18);
 }
 
+.banner > h1:before {
+  content: '';
+  background-image: url("odin-lined.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  height: 7rem;
+  width: 7rem;
+  display: inline-block;
+}
