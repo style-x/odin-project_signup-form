@@ -33,20 +33,39 @@
     <section class="main-form">
       <h3>Let's do this!</h3>
       <form action="#">
-        <input type="text" name="firstname" id="firstname">
-        <input type="text" name="lasttname" id="lasttname">
-        <br>
-        <input type="email" name="email" id="email">
-        <input type="tel" name="phonenumber" id="phonenumber">
-        <br>
-        <input type="password" name="password" id="password">
-        <input type="password" name="pwdconfirm" id="pwdconfirm">
+        <div class="grid">
+          <div class="grid-firstname column">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname">
+          </div>
+          <div class="grid-lastname column">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lasttname">
+          </div>
+          <div class="grid-email column">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email">
+          </div>
+          <div class="grid-phone column">
+            <label for="phonenumber">Phone Number</label>
+            <input type="tel" name="phonenumber">
+          </div>
+          <div class="grid-pwd column">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="errorborder">
+            <p id="error">*Passwords do not match</p>
+          </div>
+          <div class="grid-confirmpwd column">
+            <label for="pwdconfirm">Condirm Password</label>
+            <input type="password" name="pwdconfirm" class="errorborder">
+          </div>
+        </div>
       </form>
     </section>
 
-    <section class="create-login">
+    <section class="main-login">
       <button>Create Account</button>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <p>Already have an account? <a href="#" id="Login">Log in</a></p>
     </section>
 
   </main>

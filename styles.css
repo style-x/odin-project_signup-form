@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Norse-Bold";
   src: url("/Norse-Bold.otf") format("opentype");
@@ -9,22 +8,23 @@
   padding: 0;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:rgba(0, 0, 0, 0.7);
-  letter-spacing: -1px;
+  color:black;
 }
 
 body {
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 header {
-  min-height: 100vh;
-  width: 40%;
+  min-height: 15rem;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
+  background-color: lightgreen;
 }
 
 .banner {
@@ -55,24 +55,24 @@ header {
 }
 
 main {
-  width: 60%;
-  min-height: 70%;
+  width: 100vw;
   margin: auto;
   align-items: center;
   justify-content: center;
+  background-color: rgb(250, 250, 250);
 }
 
 section {
-  padding: 2rem;
+  padding: 1rem;
   min-height: 30%;
 }
 
 .main-text {
-
+  
 }
 
 .main-form {
-  background-color: rgba(0, 0, 0, 0.1)
+  background-color: white;
 }
 
 .main-form h3 {
@@ -80,17 +80,26 @@ section {
 }
 
 form input {
-  margin: 0.5rem;
-  padding: 0.2rem;
+  margin: 0 2rem;
+  padding: 0.3rem;
   margin-left: 0;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  outline: none;
+  max-width: 400px;
 }
 
-.create-login {
+form input:focus {
+  border: 1px solid blue;
+}
+
+.main-login {
   background-image: linear-gradient(180deg, #aaaaaa 0%, #ffffff 3%);
 }
 
-.create-login p {
+.main-login p {
   padding-top: 1.2rem;
+  font-weight: 600;
 }
 
 button {
@@ -99,7 +108,10 @@ button {
   margin-left: 0;
   border: 0;
   border-radius: 0.5rem;
-  background-color: rgb(58, 145, 18);
+  background-color: #596D48;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: white;
 }
 
 .banner > h1:before {
@@ -111,4 +123,68 @@ button {
   height: 7rem;
   width: 7rem;
   display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+#Login {
+  color: #596D48;
+  text-decoration: none;
+}
+
+.errorborder {
+  border: 1px solid red;
+}
+
+#error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.footer p {
+  color: white;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    min-height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+  }
+
+  main {
+    width: 60%;
+    min-height: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+  }
+
+  section {
+    padding: 2rem;
+  }
 }
